@@ -1,0 +1,263 @@
+/* Header text */
+header {
+	display: inline-block;
+}
+
+#header-wrap {
+	text-align: center;
+}
+
+.info-wrap {
+	margin-top: 20px;
+	text-align: left;
+}
+
+/* Graphics */
+div.table_div {
+	display: inline-block;
+	margin-right: 2em;
+	margin-left: 5em;
+	margin-top: 2em;
+	height: 700px;
+	width: 750px;
+	overflow-y: scroll;
+	vertical-align: top;
+}
+
+svg.table_svg {
+	height: 10120px;
+	width: 730px;
+}
+
+div.bubble_div {
+	display: inline-block;
+	margin-top: 2em;
+	margin-left: 5em;
+	z-index: 3;
+	position:relative;
+}
+
+div.button_div {
+	display: block;
+	margin-left: 5em;
+	margin-top: 2em;
+}
+
+div.button_div_inner {
+	display: inline;
+}
+
+/* Button and Slider */
+.button_div_inner {
+	margin-left: 250px;
+}
+
+/* Slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Button */
+button {
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 34px;
+}
+
+button:before {
+	border-radius: 50%;
+}
+
+.extremes_button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.extremes_button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Remove Chrome Highlighting
+See: https://stackoverflow.com/questions/21805508/chrome-automatically-highlighting-my-button-in-my-extension */
+*:focus {
+    outline:none;
+}
+
+/* Reference Line */
+.reference {
+	stroke: black;
+  	stroke-width: 0.25; 
+  	fill: none;
+}
+
+/* Circles */
+circle {
+	stroke: black;
+	stroke-width: 1;
+}
+
+.selected {
+	stroke-width: 3 !important;
+}
+
+.unbrushed {
+	fill: gray !important;
+}
+
+/* Categories */
+.edu {
+	fill: rgb(235, 115, 145);
+}
+
+.cri {
+	fill: rgb(117, 155, 191);
+}
+
+.hea {
+	fill: rgb(157, 209, 105);
+}
+
+.men {
+	fill: rgb(252, 228, 5);
+}
+
+.eco {
+	fill: rgb(133, 201, 168);
+}
+
+.ene {
+	fill: rgb(224, 107, 22);
+}
+
+/* Tooltip */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    min-width: 60px;
+    height: 120px;
+    padding: 2px;
+    background-color: white;
+    stroke: gray;
+    border-radius: 8px;
+    border: 1px solid black;
+    pointer-events: none;
+}
+
+.tooltip h2 {
+    margin: auto;
+    font: 24px sans-serif;
+}
+
+/* Table Titles */
+.tableTitleBox {
+	fill: rgb(233, 245, 247);
+}
+
+.tableTitle {
+	font: 14px sans-serif;
+	fill: black;
+	stroke-size: 1;
+	stroke: black;
+}
+
+/* Table Elements */
+.republican {
+	fill: rgb(242, 138, 131);
+}
+
+.democrat {
+	fill: rgb(150, 200, 255);
+}
+
+.seperator {
+	fill: lightgray;
+	stroke: none;
+}
+
+/* Extremes */ 
+
+.highlight {
+	stroke: black;
+	stroke-size: 3;
+}
+
+.extremes_div {
+	opacity:0.8;
+    background-color: white;
+    width:100%;
+    position:absolute;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:2;
+}
+
+.extremes_svg {
+    background-color: white;
+}
